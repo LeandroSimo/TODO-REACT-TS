@@ -1,13 +1,17 @@
+// components
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
+
+// CSS
+import styles from "./App.module.css";
 
 function App() {
   return (
     <div>
       <Header />
-      <div>
+      <main className={styles.main}>
         <h1>Conteúdo...</h1>
-      </div>
+      </main>
       <Footer />
     </div>
   );
