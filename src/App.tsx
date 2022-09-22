@@ -1,7 +1,14 @@
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
+
 function App() {
   return (
     <div>
-      TODO REACT
+      <Header />
+      <div>
+        <h1>Conteúdo...</h1>
+      </div>
+      <Footer />
     </div>
   );
 }
