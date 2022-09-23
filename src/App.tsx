@@ -6,6 +6,7 @@ import styles from "./App.module.css";
 // components
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
+import Modal from "./components/modal/Modal";
 import TaskForm from "./components/taskForm/TaskForm";
 import TaskList from "./components/taskList/TaskList";
 import { ITask } from "./interfaces/Task";
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <div>
+      <Modal />
       <Header />
       <main className={styles.main}>
         <div>
