@@ -1,16 +1,19 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 // CSS
 import styles from "./Modal.module.css";
 
-type Props = {};
+type Props = {
+  children: React.ReactNode;
+};
 
-const Modal = (props: Props) => {
+const Modal = ({ children }: Props) => {
   return (
     <div id="modal">
-      <div></div>
-      <div>
+      <div className={styles.fade}></div>
+      <div className={styles.modal}>
         <h2>Text modal</h2>
+        {children}
       </div>
     </div>
   );
