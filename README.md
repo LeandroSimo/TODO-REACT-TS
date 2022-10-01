@@ -1,3 +1,34 @@
+<h1 align="center">
+    Frontend Books Store
+</h1>
+
+<p align="center">
+  <a></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-mais">Mais sobre a Tecnologia</a>
+</p>
+
+<p align="center">
+  <img alt="Home Screen" src="https://user-images.githubusercontent.com/56087579/193384275-2e39bbae-3f35-42fb-98dc-2cafd8956b1b.png" width="750px">
+</p>
+
+## 💻 Projeto
+
+Este projeto foi desenvolvido com base em curso em vídeo para fins de estudos.
+
+## :rocket: Tecnologias
+
+Essa aplicação foi desenvolvida com as seguintes tecnologias:
+- [TypeScript][typescript]
+- [React][reactjs]
+- [Node][node]
+- [npm][npm]
+
+<h1 align="center">
+  <a id="information_source-mais">:information_source: Mais sobre a Tecnologia :</a>
+</h1>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -44,3 +75,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+[typescript]: https://www.typescriptlang.org/
+[reactjs]: https://pt-br.reactjs.org/
+[node]: https://nodejs.org/en/
+[npm]: https://www.npmjs.com/
