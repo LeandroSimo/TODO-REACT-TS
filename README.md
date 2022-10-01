@@ -29,7 +29,7 @@ Essa aplicação foi desenvolvida com as seguintes tecnologias:
   <a id="information_source-mais">:information_source: Mais sobre a Tecnologia :</a>
 </h1>
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
