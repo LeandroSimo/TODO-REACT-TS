@@ -7,3 +7,38 @@
 .main h2 {
   margin-bottom: 0.8em;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_overlay {
+  background: #000;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_content {
+  width: 90%;
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button {
+  padding: 5px;
+  font-size: large;
+  float: right;
+  cursor: pointer;
+}

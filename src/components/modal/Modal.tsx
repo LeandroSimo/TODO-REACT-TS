@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, useState } from "react";
 
 // CSS
 import styles from "./Modal.module.css";
@@ -7,7 +7,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-const Modal = ({ children }: Props) => {
+const ModalBase = ({ children }: Props) => {
   return (
     <div id="modal">
       <div className={styles.fade}></div>
@@ -19,4 +19,4 @@ const Modal = ({ children }: Props) => {
   );
 };
 
-export default Modal;
+export default ModalBase;

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Modal from "react-modal";
 
 // CSS
 import styles from "./App.module.css";
@@ -6,13 +7,25 @@ import styles from "./App.module.css";
 // components
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import Modal from "./components/modal/Modal";
+
 import TaskForm from "./components/taskForm/TaskForm";
 import TaskList from "./components/taskList/TaskList";
 import { ITask } from "./interfaces/Task";
 
+Modal.setAppElement("#root");
+
 function App() {
   const [taskList, setTaskList] = useState<ITask[]>([]);
+
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
 
   const deleteTask = (id: number) => {
     setTaskList(
@@ -24,9 +37,17 @@ function App() {
 
   return (
     <div>
-      <Modal
-        children={<TaskForm btnText="Editar Tarefa" taskList={taskList} />}
-      />
+      <div className="container">
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel="Example Modal"
+          overlayClassName={styles.modal_overlay}
+          className={styles.modal_content}
+        >
+          <TaskForm btnText="Editar Tarefa" taskList={taskList} />
+        </Modal>
+      </div>
       <Header />
       <main className={styles.main}>
         <div>
@@ -39,7 +60,11 @@ function App() {
         </div>
         <div>
           <h2>Suas tarefas: </h2>
-          <TaskList taskList={taskList} handleDelete={deleteTask} />
+          <TaskList
+            taskList={taskList}
+            handleDelete={deleteTask}
+            handleEdit={openModal}
+          />
         </div>
       </main>
       <Footer />
