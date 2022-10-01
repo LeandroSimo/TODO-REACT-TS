@@ -16,14 +16,16 @@ Modal.setAppElement("#root");
 
 function App() {
   const [taskList, setTaskList] = useState<ITask[]>([]);
+  const [taskUpdate, setTaskUpdate] = useState<ITask | null>(null);
 
   const [modalIsOpen, setIsOpen] = useState(false);
 
-  const openModal = () => {
+  const openModal = (task: ITask) => {
     setIsOpen(true);
+    setTaskUpdate(task);
   };
 
-  const closeModal = () => {
+  const closeModal = (): void => {
     setIsOpen(false);
   };
 
@@ -45,7 +47,11 @@ function App() {
           overlayClassName={styles.modal_overlay}
           className={styles.modal_content}
         >
-          <TaskForm btnText="Editar Tarefa" taskList={taskList} />
+          <TaskForm
+            btnText="Editar Tarefa"
+            taskList={taskList}
+            task={taskUpdate}
+          />
         </Modal>
       </div>
       <Header />
