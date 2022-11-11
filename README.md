@@ -1,5 +1,5 @@
 <h1 align="center">
-    Frontend Books Store
+    Todo React
 </h1>
 
 <p align="center">
